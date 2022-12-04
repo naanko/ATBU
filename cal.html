@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator with Javascript</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div style="text-align: center; padding-top: 40px ">
+        <h3>Leonard's Calculator</h3>
+        <h4>A simple summation and multiplication app</h4>
+        <input type="text" id="txtFirstNo" placeholder="First Number"/> <br/>
+        <input type="text" id="txtSecondNo" placeholder="Second Number" /> <br/>
+    
+    
+        <br />
+        <div style="padding-top: 3px;">
+            <input type="text" id="txtResult" />
+        </div>
+
+        <button onClick="sum()">Sum</button>
+        <button onClick="product()">Product</button>       
+</div>
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    function sum() {
+        var txtFirstNo = document.getElementById('txtFirstNo').value;
+        var txtSecondNo = document.getElementById('txtSecondNo').value;
+        var result = parseInt(txtFirstNo) + parseInt(txtSecondNo);
+        if (!isNaN(result)) {
+            document.getElementById('txtResult').value = result;
+        }
+    }
+
+    function product() {
+        var txtFirstNo = document.getElementById('txtFirstNo').value;
+        var txtSecondNo = document.getElementById('txtSecondNo').value;
+        var result = parseInt(txtFirstNo) * parseInt(txtSecondNo);
+        if (!isNaN(result)) {
+            document.getElementById('txtResult').value = result;
+        }
+    }
+</script>
+</body>
+</html>

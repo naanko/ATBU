@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator with Javascript</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div style="height:300px; text-align: center; padding-top: 40px">
+        <h3>Add two values without pressing any buttons</h3>
+        <input type="text" id="txtFirstNo" placeholder="First Number" onkeyup="sum()" /> <br/>
+        <input type="text" id="txtSecondNo" placeholder="Second Number" onkeyup="sum()" /> <br/>
+    
+    
+        <br />
+        <div style="padding-top:10px; margin-left: 0px">
+            Result:
+            <input type="text" id="txtResult" />
+        </div>
+</div>
+
+
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script type="text/javascript">
+            function sum() {
+                var txtFirstNo = document.getElementById('txtFirstNo').value;
+                var txtSecondNo = document.getElementById('txtSecondNo').value;
+                var result = parseInt(txtFirstNo) + parseInt(txtSecondNo);
+                if (!isNaN(result)) {
+                    document.getElementById('txtResult').value = result;
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body{
+    font-family: Ubuntu;
+}
+.container{
+    width: 1000px;
+    align-items: center;
+    margin-left: 150px;
+}
+input{
+    width: 25%;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+button{
+    background-color: lightgreen;
+    color: black;
+    margin: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: monospace, sans-serif;
+}
+.top{
+    display: grid;
+    text-align: center;
+    background-color: #eee;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #eee;
+    padding: 1em;
+    margin: 10px;
+}
+.wrapper h3{
+    text-align: center;
+}
+footer{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eee;
+    text-align: center;
+}
